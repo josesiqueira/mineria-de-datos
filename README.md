@@ -10,4 +10,5 @@ Excecution order:
 2) Crimes-PCAv3.r
 3) Crimes-Clustering.txt
 
+É possível visualizar o estudo em detalhes no arquivo MD_14_Practica_1.pdf
 
