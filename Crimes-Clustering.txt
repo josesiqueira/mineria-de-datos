@@ -1,0 +1,147 @@
+
+
+df <- read.csv("CrimesClean.csv")
+
+attach(df)
+DENSITY = POPULATION/LAND.AREA.km2.
+df$DENSITY=DENSITY
+names(df)
+#SELECCIONAR LES VARIABLES PER FER EL PCA
+# PRINCIPAL COMPONENT ANALYSIS OF dcon
+dcon<-df[,c(4:6,11,16,23:31)] 
+#use the numerical variables to find principal components
+
+
+#principal correspondence analysis of numerical variables
+
+#
+# CLUSTERING
+#
+
+#
+# LETS TAKE THE INDIVIDUALS DEFINED BY FACTORIAL COORDINATES ISSUED FROM THE PCA (alternatively MCA or PCA+MCA)
+# 
+pc1 = prcomp(dcon, scale=T)
+
+print(pc1)
+
+#let's take the 5 first principal components
+
+nd=5
+
+lbd = pc1$sdev[1:nd]^2
+U = pc1$rotation[,1:nd]
+Psi = pc1$x[,1:nd]
+
+dcat <- data.frame(VICRACE,VICSEX,VICOCCUP,VICCOND,ACCURACE,ACCUSEX,ACCUOCCU,ACCUCOND,RELATION,CAUSE,WEAPON,LOCATION)
+dict <- data.frame(COUNTY,HOUR,WEEKDAY)
+
+source("acm.r")
+
+
+ac1 <- acm(dcat,dict)
+
+i <- 1
+
+while (ac1$vaps[i] > 1/ncol(dcat)) i = i+1
+
+nd = i-1
+
+FI= ac1$rs[,1:nd]
+
+factors=data.frame(Psi, FI)
+
+objects(factors)
+
+# KMEANS RUN, BUT HOW MANY CLASSES?
+
+k1 <- kmeans(factors,5)
+
+attributes(k1)
+
+k1$size
+
+k1$withinss
+
+k1$centers
+
+# LETS COMPUTE THE DECOMPOSITION OF INERTIA
+
+Bss <- sum(rowSums(k1$centers^2)*k1$size)
+Bss
+Wss <- sum(k1$withinss)
+Wss
+Tss <- sum(rowSums(Psi^2))
+Tss
+
+Bss+Wss
+
+Ib1 <- 100*Bss/(Bss+Wss)
+Ib1
+
+# LETS REPEAT THE KMEANS RUN WITH K=5
+
+k2 <- kmeans(factors,5)
+k2$size
+
+Bss <- sum(rowSums(k2$centers^2)*k2$size)
+Bss
+Wss <- sum(k2$withinss)
+Wss
+
+Ib2 <- 100*Bss/(Bss+Wss)
+Ib2
+
+# WHY WE HAVE OBTAINED DIFFERENT RESULTS?, AND WHICH RUN IS BETTER?
+
+# NOW TRY K=8
+
+k3 <- kmeans(factors,8)
+k3$size
+
+Bss <- sum(rowSums(k3$centers^2)*k3$size)
+Wss <- sum(k3$withinss)
+
+Ib3 <- 100*Bss/(Bss+Wss)
+Ib3
+
+
+# HIERARCHICAL CLUSTERING
+
+d  <- dist(factors)
+h1 <- hclust(d,method="ward")  # NOTICE THE COST
+plot(h1, labels=F,hang=0)
+
+# BUT WE ONLY NEED WHERE THERE ARE THE LEAPS OF THE HEIGHT
+
+# WHERE ARE THER THE LEAPS? WHERE WILL YOU CUT THE DENDREOGRAM?, HOW MANY CLASSES WILL YOU OBTAIN?
+
+nc = 5
+
+c <- cutree(h1,nc)
+View(c)
+c[1:20]
+
+# LETS SEE THE PARTITION VISUALLY
+
+plot(Psi[,1],Psi[,2],col=c,main="Clustering of credit data in 5 classes")
+legend("bottomleft",c("c1","c2","c3","c4","c5"),pch=1,col=c(1:7))
+##########################
+##########################
+###
+aux<-cbind(df,c) ##df
+c1<-subset(aux, c==1)
+c2<-subset(aux, c==2)
+c3<-subset(aux, c==3)
+c4<-subset(aux, c==4)
+c5<-subset(aux, c==5)
+View(c1)
+View(c2)
+View(c3)
+View(c4)
+View(c5)
+summary(c1)
+summary(c2)
+summary(c3)
+summary(c4)
+summary(c5)

@@ -1,0 +1,349 @@
+                                                             
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                           ETHNICITY AND HOMICIDE IN CALIFORNIA,                                                  
+                                                                                         
+       VARIABLE # AND VARIABLE LABEL                         COLUMN                      
+                                                                                         
+            1.   VICTIM  (CHARACTER)                          1-12                       
+                                                                                         
+                                                                                         
+            2.   KILLER  (CHARACTER)                         13-24                       
+                                                                                         
+                                                                                         
+            3.   YEAR                                        25-26                       
+                                                                                         
+                                                                                         
+            4.   MONTH                                       27-28                       
+                                                                                         
+                 99.  UNKNOWN                                                            
+                                                                                         
+                                                                                         
+            5.   DAY                                         29-30                       
+                                                                                         
+                 99.  UNKNOWN                                                            
+                                                                                         
+                                                                                         
+            6.   HOUR                                         31                         
+                                                                                         
+                 1.  12 NOON TO 3 PM                                                     
+                 2.  3 PM TO 6 PM                                                        
+                 3.  6 PM TO 9 PM                                                        
+                 4.  9 PM TO 12 MIDNIGHT                                                 
+                 5.  12 MIDNIGHT TO 3 AM                                                 
+                 6.  3 AM TO 6 AM                                                        
+                 7.  6 AM TO 9 AM                                                        
+                 8.  9 AM TO 12 NOON                                                     
+                 9.  UNKNOWN                                                             
+                                                                                         
+                                                                                         
+            7.   WEEKDAY                                      32                         
+                                                                                         
+                 1.  MONDAY                                                              
+                 2.  TUESDAY                                                             
+1                                                                                        
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                 3.  WEDNESDAY                                                           
+                 4.  THURSDAY                                                            
+                 5.  FRIDAY                                                              
+                 6.  SATURDAY                                                            
+                 7.  SUNDAY                                                              
+                                                                                         
+            8.   COUNTY                                     33-34                        
+                                                                                         
+                 1.  SAN DIEGO                                                           
+                 3.  SANTA BARBARA                                                       
+                 4.  SAN LUIS OBISPO                                                     
+                11.  SACRAMENTO                                                          
+                12.  SAN JOAQUIN                                                         
+                21.  CALAVERAS                                                           
+                22.  TUOLUMNE                                                            
+                                                                                         
+                                                                                         
+            9.   VICRACE                                      35                         
+                                                                                         
+                 1.  WHITE (OTHER THAN HISPANIC)                                         
+                 2.  HISPANIC                                                            
+                 3.  NATIVE AMERICAN                                                     
+                 4.  ORIENTAL                                                            
+                 5.  AFRICAN-AMERICAN                                                    
+                                                                                         
+                                                                                         
+           10.   VICSEX                                       36                         
+                                                                                         
+                 1.  MALE                                                                
+                 2.  FEMALE                                                              
+                 9.  UNKNOWN                                                             
+                                                                                         
+                                                                                         
+           11.   VICAGE                                      37-38                       
+                                                                                         
+                99.  UNKNOWN                                                             
+                                                                                         
+                                                                                         
+           12.   VICOCCUP                                    39-40                       
+                                                                                         
+                 1.  LABORER                                                             
+                 2.  FARMER                                                              
+                 3.  RANCHER                                                             
+                 4.  MERCHANT                                                            
+                 5.  COWBOY                                                              
+                 6.  SHEEP HERDER                                                        
+                 7.  SOLDIER                                                             
+1                                                                                        
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                 8.  SAILOR                                                              
+                 9.  BARTENDER                                                           
+                10.  LAWMAN                                                              
+                12.  HOUSEWIFE                                                           
+                13.  PROSTITUTE                                                          
+                14.  LAWYER                                                              
+                15.  COOK                                                                
+                16.  BUTCHER                                                             
+                17.  TEAMSTER                                                            
+                18.  RR WORKER                                                           
+                19.  MINER                                                               
+                20.  HOTEL KEEPER                                                        
+                21.  BAR OWNER                                                           
+                22.  CLERICAL                                                            
+                23.  TEACHER                                                             
+                24.  TRANSIENT                                                           
+                25.  FISHERMAN                                                           
+                26.  NURSE                                                               
+                27.  STUDENT                                                             
+                28.  DOMESTIC                                                            
+                29.  DRUGGIST                                                            
+                30.  DOCTOR                                                              
+                31.  STORE CLERK                                                         
+                32.  BAKER                                                               
+                33.  BARBER                                                              
+                34.  WAITER                                                              
+                35.  LAUNDRY                                                             
+                36.  MUSICIAN                                                            
+                37.  DENTIST                                                             
+                38.  SHOEMAKER                                                           
+                39.  MECHANIC                                                            
+                40.  BLACKSMITH                                                          
+                41.  CARPENTER                                                           
+                42.  PREACHER                                                            
+                44.  HARNESS MAKER                                                       
+                45.  GARDENER                                                            
+                46.  SALESMAN                                                            
+                47.  TAILOR                                                              
+                48.  STEAMBOAT RUNNER                                                    
+                49.  DISHWASHER                                                          
+                50.  PORTER                                                              
+                51.  LEGISLATOR                                                          
+                52.  RANCH/FARM HAND                                                     
+                53.  OTHER TRADESMAN                                                     
+                54.  BOAT HAND                                                           
+                55.  GAMBLER                                                             
+                56.  PIMP                                                                
+1                                                                                        
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                57.  MINISTER                                                            
+                58.  EDITOR OR PUBLISHER                                                 
+                59.  PEDDLER                                                             
+                60.  PRISON INMATE                                                       
+                61.  WATCHMAN                                                            
+                62.  BOOKKEEPER                                                          
+                63.  WELLS FARGO GUARD                                                   
+                64.  ASYLUM INMATE                                                       
+                65.  JUDGE/JUSTICE OF THE PEACE                                          
+                66.  SEAMSTRESS                                                          
+                99.  UNKNOWN                                                             
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+            13.  VICCOND                                        41                       
+                                                                                         
+                 1.  DRINKING                                                            
+                 2.  OTHER DRUGS                                                         
+                 3.  CALM                                                                
+                 4.  AGITATED                                                            
+                 5.  OTHER                                                               
+                 9.  UNKNOWN                                                             
+                                                                                         
+                                                                                         
+            14.  ACCURACE                                       42                       
+                                                                                         
+                 1.  WHITE (OTHER THAN HISPANIC)                                         
+                 2.  HISPANIC                                                            
+                 3.  NATIVE AMERICAN                                                     
+                 4.  ORIENTAL                                                            
+                 5.  AFRICAN-AMERICAN                                                    
+                                                                                         
+                                                                                         
+            15.  ACCUSEX                                        43                       
+                                                                                         
+                 1.  MALE                                                                
+                 2.  FEMALE                                                              
+                 9.  UNKNOWN                                                             
+                                                                                         
+                                                                                         
+            16.  ACCUAGE                                      44-45                      
+                                                                                         
+                 99.  UNKNOWN                                                            
+1                                                                                        
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+            17.  ACCUOCCUP                                    46-47                      
+                                                                                         
+                 [SEE VARIABLE 12]                                                       
+                                                                                         
+                                                                                         
+            18.  ACCUCOND                                       48                       
+                                                                                         
+                 1.  DRINKING                                                            
+                 2.  OTHER DRUGS                                                         
+                 3.  CALM                                                                
+                 4.  AGITATED                                                            
+                 5.  OTHER                                                               
+                 9.  UNKNOWN                                                             
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+            19.  RELATION                                       49                       
+                                                                                         
+                 1.  MARRIED                                                             
+                 2.  IN-LAWS                                                             
+                 3.  FRIENDS                                                             
+                 4.  STRANGERS                                                           
+                 5.  ROOMMATES                                                           
+                 8.  OTHER                                                               
+                 9.  UNKNOWN                                                             
+                                                                                         
+                                                                                         
+            20.  CAUSE                                          50                       
+                                                                                         
+                 1.  DOMESTIC DISPUTE                                                    
+                 2.  QUARREL                                                             
+                 3.  BRAWL                                                               
+                 4.  LYNCH MOB                                                           
+                 5.  KILLED BY POLICE                                                    
+                 6.  KILLED POLICE                                                       
+                 7.  ROBBERY                                                             
+                 8.  OTHER                                                               
+                 9.  UNKNOWN                                                             
+                                                                                         
+                                                                                         
+            21.  WEAPON                                       51-52                      
+1                                                                                        
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                 1.  HAND GUN                                                            
+                 2.  RIFLE                                                               
+                 3.  SHOTGUN                                                             
+                 4.  GUN UNKNOWN                                                         
+                 5.  KNIFE                                                               
+                 6.  AXE                                                                 
+                 7.  HANGING                                                             
+                 8.  FIRE                                                                
+                 9.  FALL                                                                
+                10.  STRANGLED                                                           
+                11.  FISTS                                                               
+                12.  BLUNT INSTRUMENT                                                    
+                13.  POISON                                                              
+                14.  THROWN DOWN                                                         
+                15.  SHARP INSTRUMENT                                                    
+                16.  DRUGS                                                               
+                17.  KICKED                                                              
+                18.  DROWNED                                                             
+                99.  UNKNOWN                                                             
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+            22.  LOCATION                                     53-54                      
+                                                                                         
+                 1.  VICTIM'S HOME                                                       
+                 2.  STREET                                                              
+                 3.  SALOON                                                              
+                 4.  WORK                                                                
+                 5.  RANCH                                                               
+                 6.  FARM                                                                
+                 7.  COUNTRY ROAD                                                        
+                 8.  DESERT                                                              
+                 9.  JAIL                                                                
+                10.  WOODS                                                               
+                11.  HOTEL                                                               
+                12.  WHARF                                                               
+                13.  SHIP                                                                
+                14.  RAILROAD                                                            
+                15.  BEACH                                                               
+                16.  MOUNTAINS                                                           
+                17.  RIVER                                                               
+                18.  OCEAN                                                               
+                19.  INDIAN RESERVATION                                                  
+1                                                                                        
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                20.  ACCUSED HOME                                                        
+                21.  CEMETARY                                                            
+                22.  CHURCH                                                              
+                23.  MISSION                                                             
+                24.  COURTHOUSE                                                          
+                25.  HOSPITAL                                                            
+                26.  MILITARY FORT                                                       
+                27.  BANK                                                                
+                28.  SAW MILL                                                            
+                29.  STORE                                                               
+                30.  LAKE                                                                
+                31.  HOSPITAL                                                            
+                36.  MINE                                                                
+                37.  BRIDGE                                                              
+                38.  BROTHEL                                                             
+                39.  CEMETARY                                                            
+                40.  RESTAURANT                                                          
+                41.  PRISON                                                              
+                42.  ROOMING HOUSE                                                       
+                43.  PARK                                                                
+                44.  OTHER HOUSE                                                         
+                45.  STATE BUILDING                                                      
+                46.  BLACKSMITH SHOP                                                     
+                47.  OTHER BUSINESS                                                      
+                48.  STABLE OR CORRAL                                                    
+                49.  STAGE OR RR STATION                                                 
+                50.  DANCE HALL                                                          
+                51.  OTHER BUILDING                                                      
+                52.  CABIN (RURAL)                                                       
+                53.  ASYLUM                                                              
